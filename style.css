@@ -1,0 +1,313 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f8;
+    color: #333;
+}
+
+
+header {
+    background: linear-gradient(to right, #124d70, #168c88);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 65px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+header p {
+    font-size: 13px;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    background-color: #236c7c;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin: 3px;
+}
+
+nav a:hover {
+    background-color: #0d465b;
+}
+
+
+.container {
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+}
+
+
+aside {
+    width: 28%;
+    background-color: #dce9f7;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+aside h3 {
+    color: #244d68;
+    font-size: 18px;
+}
+
+aside h4 {
+    color: #168c88;
+}
+
+aside p,
+aside li {
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+aside ul {
+    padding-left: 20px;
+}
+
+aside a {
+    color: #146c80;
+}
+
+
+main {
+    width: 72%;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+section h3 {
+    text-align: center;
+    color: #244d68;
+    font-size: 19px;
+}
+
+section p {
+    font-size: 13px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+
+.catatan {
+    background-color: #e5f5f2;
+    border-left: 4px solid #168c88;
+    padding: 12px;
+}
+
+
+.kartu-container {
+    display: flex;
+    gap: 15px;
+}
+
+.kartu {
+    width: 33.33%;
+    background-color: #eef3f7;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.kartu h4 {
+    color: #168c88;
+}
+
+.kartu img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.kartu p {
+    font-size: 12px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+caption {
+    text-align: left;
+    padding: 10px;
+}
+
+th {
+    background-color: #174e70;
+    color: white;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #eef3f7;
+}
+
+
+.tips-container {
+    display: flex;
+    gap: 15px;
+}
+
+.tips {
+    width: 50%;
+    background-color: #f0f8f8;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.tips h4 {
+    color: #168c88;
+}
+
+.tips li {
+    font-size: 12px;
+    line-height: 2;
+}
+
+
+details {
+    background-color: #e5edf4;
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: #244d68;
+}
+
+
+form {
+    background-color: #f5f9fa;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+fieldset {
+    border: 1px solid #d5e1e5;
+    padding: 12px;
+}
+
+legend {
+    color: #168c88;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccd8dd;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    margin-top: 10px;
+    padding: 9px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    background-color: #168c88;
+    color: white;
+}
+
+input[type="reset"] {
+    background-color: #dce9f7;
+    color: #244d68;
+}
+
+
+footer {
+    background: linear-gradient(to right, #124d70, #168c88);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 12px;
+}
+
+footer a {
+    color: white;
+}
+
+
+@media screen and (max-width: 700px) {
+    .container {
+        flex-direction: column;
+    }
+
+    aside,
+    main {
+        width: 100%;
+    }
+
+    .kartu-container {
+        flex-direction: column;
+    }
+
+    .kartu {
+        width: 100%;
+    }
+
+    .tips-container {
+        flex-direction: column;
+    }
+
+    .tips {
+        width: 100%;
+    }
+
+    table {
+        font-size: 10px;
+    }
+}
